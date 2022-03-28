@@ -8,6 +8,9 @@ namespace test.epi.forms.Pages.MyPage
         AvailableInEditMode = true)]
     public class MyPage : PageData
     {
+        public virtual string Headline { get; set; }
+
+        public virtual XhtmlString Body { get; set; }
         public virtual ContentArea ContentArea { get; set; }
     }
 }
