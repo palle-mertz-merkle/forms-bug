@@ -1,0 +1,10 @@
+﻿@model IEnumerable<test.epi.forms.Components.MainNavigation.NavigationItem>
+<nav>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li><a href="@item.Url">@item.Text</a></li>
+        }
+    </ul>
+</nav>
+<hr/>

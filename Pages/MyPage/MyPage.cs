@@ -8,9 +8,13 @@ namespace test.epi.forms.Pages.MyPage
         AvailableInEditMode = true)]
     public class MyPage : PageData
     {
+        [CultureSpecific]
         public virtual string Headline { get; set; }
 
+        [CultureSpecific]
         public virtual XhtmlString Body { get; set; }
+        
+        [CultureSpecific]
         public virtual ContentArea ContentArea { get; set; }
     }
 }

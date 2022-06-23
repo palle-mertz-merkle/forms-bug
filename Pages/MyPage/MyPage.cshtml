@@ -1,6 +1,11 @@
 ﻿@using EPiServer.Web.Mvc.Html
 @model test.epi.forms.Pages.MyPage.MyPage
 
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+
 <h1>@Html.PropertyFor(m => m.Headline)</h1>
 
 @Html.PropertyFor(m => m.Body)

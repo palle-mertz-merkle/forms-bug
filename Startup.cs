@@ -22,6 +22,12 @@ namespace test.epi.forms
             {
                 //Add development configuration
             }
+            
+            services.AddRouting(options =>
+            {
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = true;
+            });
 
             services.AddMvc();
             services.AddCms()

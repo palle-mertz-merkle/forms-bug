@@ -15,7 +15,7 @@ namespace test.epi.forms
         {
             get
             {
-                throw new Exception(); //First insert a published form with the data source and publish page
+                //throw new Exception(); //First insert a published form with the data source and publish page
                 var ds1 = new Datasource
                 {
                     Id = "HardcodeSystemDS",
